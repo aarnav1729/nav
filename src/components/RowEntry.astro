@@ -2,11 +2,10 @@
 export interface Props {
   name: string;
   title?: string;
-  description: string;
   subTitle?: string;
 }
 
-const { description, name, title, subTitle } = Astro.props;
+const { name, title, subTitle } = Astro.props;
 ---
 
 <div class="flex flex-row dark:text-white">
@@ -16,6 +15,6 @@ const { description, name, title, subTitle } = Astro.props;
       {title && <span class="font-bold">{title}</span>}
       {subTitle && <span>{subTitle}</span>}
     </div>
-    <div dangerouslySetInnerHTML={{ __html: description }}></div>
+    <slot></slot> 
   </div>
 </div>
