@@ -10,8 +10,8 @@ const { name, title, subTitle } = Astro.props;
 
 <div class="row-entry">
   <div class="entry-date">{name}</div>
-  <div class="entry-details">
-    {title && <div class="entry-title font-bold">{title}</div>}
+  <div class="entry-content">
+    {title && <div class="entry-title">{title}</div>}
     {subTitle && <div class="entry-subtitle">{subTitle}</div>}
     <slot></slot> 
   </div>
