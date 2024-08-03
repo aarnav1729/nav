@@ -83,28 +83,22 @@ blockquote {
     color: white;
 }
 
-/* General styles */
 .row-entry {
     margin-bottom: 20px;
-    /* Space between entries */
 }
 
 .entry-date {
     font-weight: bold;
-    /* Makes the date stand out */
     margin-bottom: 5px;
-    /* Space between the date and the content */
 }
 
 .entry-content {
     padding-left: 20px;
-    /* Indent content for readability */
 }
 
 .entry-title {
     font-size: 1.1em;
     color: var(--text-color);
-    /* Controlled by CSS variable */
     margin-bottom: 3px;
 }
 
@@ -112,41 +106,32 @@ blockquote {
     font-size: 1em;
     margin-bottom: 5px;
     color: var(--text-color);
-    /* Controlled by CSS variable */
 }
 
 ul {
     list-style-type: disc;
     padding-left: 20px;
-    /* Ensure bullet points are indented */
     margin: 0;
 }
 
 li {
     margin-bottom: 5px;
     color: var(--text-color);
-    /* Controlled by CSS variable */
 }
 
-/* Theme-specific styles */
 :root {
     --text-color: #000;
-    /* Default text color for light mode */
 }
 
 .dark {
     --text-color: #fff;
-    /* Text color for dark mode */
 }
 
 body.dark {
     background-color: #333;
-    /* Dark mode background */
 }
 
 body {
     background-color: #fff;
-    /* Light mode background */
     color: var(--text-color);
-    /* Apply text color based on theme */
 }
