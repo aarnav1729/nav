@@ -1,6 +1,6 @@
 ---
 export interface Props {
-  name: string;
+  name: string; 
   title?: string;
   subTitle?: string;
 }
@@ -10,11 +10,9 @@ const { name, title, subTitle } = Astro.props;
 
 <div class="row-entry">
   <div class="entry-date">{name}</div>
-  <div class="entry-content">
-    <div class="entry-titles">
-      {title && <span class="font-bold">{title}</span>}
-      {subTitle && <span class="entry-subtitle">{subTitle}</span>}
-    </div>
+  <div class="entry-details">
+    {title && <div class="entry-title font-bold">{title}</div>}
+    {subTitle && <div class="entry-subtitle">{subTitle}</div>}
     <slot></slot> 
   </div>
 </div>

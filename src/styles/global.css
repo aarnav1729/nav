@@ -82,36 +82,30 @@ blockquote {
 }
 
 .row-entry {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start; /* Aligns items to the top */
-  width: 100%;
-}
-
-.entry-date {
-  flex-basis: 150px; /* Adjust width as necessary */
-  flex-shrink: 0;
-  margin-right: 20px; /* Space between date and content */
-}
-
-.entry-content {
-  flex-grow: 1;
-}
-
-.entry-titles {
-  display: block; /* Ensures titles are stacked */
-}
-
-.entry-subtitle {
-  display: block; /* Optional: Adjust based on how subtitle should appear */
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px; /* Adjust based on exact alignment needs */
-  margin: 0;
-}
-
-li {
-  margin-bottom: 5px;
-}
+    display: flex;
+    align-items: flex-start; /* Align at the top */
+    margin-bottom: 20px; /* Space between entries */
+  }
+  
+  .entry-date {
+    width: 140px; /* Fixed width for the date */
+    margin-right: 20px; /* Space between the date and the content */
+  }
+  
+  .entry-details {
+    flex-grow: 1;
+  }
+  
+  .entry-title {
+    margin-bottom: 5px; /* Space between title and subtitle or content */
+  }
+  
+  ul {
+    margin: 0;
+    padding-left: 20px; /* Indentation for bullet points */
+    list-style-type: disc; /* Ensure bullets are shown */
+  }
+  
+  li {
+    margin-bottom: 5px; /* Space between list items */
+  }  
