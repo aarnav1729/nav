@@ -135,3 +135,7 @@ body {
     background-color: #fff;
     color: var(--text-color);
 }
+
+.strong {
+    color: var(--text-color);
+}
