@@ -12,16 +12,38 @@ import "../styles/global.css";
   <head>
     <meta charset="utf-8" />
     <meta name="google-site-verification" content="6eeNhseCHELUkqfOR0FBJKSl5kNbtJYUblacRCL1-fI" />
+    <link rel="canonical" href="https://aarnavsingh.vercel.app" />
     <link rel="icon" type="image/svg+xml" href="/profile.png" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="This is a digital resume for Aarnav Singh">
+    <meta name="description" content="This is Aarnav Singh's digital resume created using Astro.js and TailwindCSS. It covers all of Aarnav Singh's technical experience, employment history, education information, skills and interests, certifications, awards, soft skills, and volunteer experience!">
     <meta name="keywords" content="Aarnav Singh, Aarnav, Resume, Aarnav Resume, Aarnav Singh Resume, Resume Aarnav, Resume Aarnav Singh">
     <meta name="author" content="Aarnav Singh">
     <meta name="generator" content={Astro.generator} />
     <title>{SITE_TITLE}</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Aarnav Singh",
+        "url": "https://aarnavsingh.vercel.app",
+        "address": "Eagan, MN 55123",
+        "email": "aarnavsingh836@gmail.com",
+        "jobTitle": "Full Stack Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Premier Energies"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/aarnavsinghh",
+          "https://github.com/aarnav1729",
+          "https://webstaxinc.vercel.app/"
+        ]
+      }
+      </script>      
   </head>
   <body class="dark:bg-black">
-    <button id="dark-mode-toggle" class="mb-2 mt-2">
+    <button id="dark-mode-toggle" aria-label="toggle dark mode" class="mb-2 mt-2">
       <Icon name="tabler:sun" class="w-6 h-6 dark:text-white" />
     </button>
 
@@ -35,17 +57,19 @@ import "../styles/global.css";
         </a>
       </h2>
       <h3 class="text-base dark:text-white">
-        <a
-          href="tel:918143025550"
-          class="hover:text-red-500 dark:text-white dark:hover:text-red-500"
-          >+91 814-302-5550
-        </a>
-        |
-        <a
-          href="mailto:aarnavsingh836@gmail.com"
-          class="hover:text-red-500 dark:text-white dark:hover:text-red-500"
-          >aarnavsingh836@gmail.com
-        </a>
+        <address>
+          <a
+            href="tel:918143025550"
+            class="hover:text-red-500 dark:text-white dark:hover:text-red-500"
+            >+91 814-302-5550
+          </a>
+          |
+          <a
+            href="mailto:aarnavsingh836@gmail.com"
+            class="hover:text-red-500 dark:text-white dark:hover:text-red-500"
+            >aarnavsingh836@gmail.com
+          </a>
+        </address>
       </h3>
       <h3 class="text-base dark:text-white">
         <a
@@ -159,7 +183,7 @@ import "../styles/global.css";
       </div>
     </div>
 
-    <script is:inline>
+    <script is:inline defer>
       if (
         localStorage.theme === "dark" ||
         (!("theme" in localStorage) &&
