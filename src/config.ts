@@ -1,2 +1,3 @@
-export const SITE_TITLE = "resume: aarnav singh";
-export const SITE_URL = "https://aarnavsingh.vercel.app/";
+export const SITE_TITLE = "Aarnav Singh — Resume";
+export const SITE_DESCRIPTION =
+  "Full-Stack Developer resume for Aarnav Singh, built with Astro + Tailwind.";
