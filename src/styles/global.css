@@ -25,7 +25,13 @@ h5,
 h6,
 strong,
 b {
-  color: #000000;
+  color: var(--text-color);
+}
+
+/* (Optional defense-in-depth for list headings) */
+.dark li > strong,
+.dark li > b {
+  color: var(--text-color);
 }
 
 a {
